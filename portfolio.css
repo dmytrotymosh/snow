@@ -1,0 +1,140 @@
+.portfolio {
+    background-color: black;
+    position: relative;
+    padding: 80px 0 180px;
+}
+.portfolio__wrapper {
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 40px;
+}
+.portfolio__contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.portfolio__phone-item {
+    color: white;
+}
+.portfolio__contact-title {
+    color: white;
+}
+.portfolio__contact-title span {
+    color: var(--main-color);
+}
+.portfolio__contact-title {
+    font-size: clamp(25px, 1.83vw, 35px);
+    font-weight: 700;
+    font-family: "Anonymous Pro", serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.portfolio__contact-text {
+    color: rgba(255, 255, 255, .6);
+}
+.portfolio__button {
+    align-self: center;
+}
+.portfolio__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.portfolio__header-highlight {
+    color: white;
+}
+.swiper {
+    width: auto;
+    height: 400px;
+}
+.swiper-slide {
+    background-color: var(--main-color);
+}
+.portfolio__nav--top {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+.portfolio__nav--bottom {
+    display: flex;
+    gap: 10px;
+}
+.portfolio__button-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.button-prev,
+.button-next {
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-prev:hover,
+.button-next:hover {
+    background-color: white;
+}
+.slider-wrapper {
+    margin-inline: 40px;
+}
+.swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1239px) {
+    .portfolio__button-wrapper {
+        display: flex;
+    }
+    .portfolio__nav--top {
+        display: none;
+    }
+    .portfolio__contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio__contact-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .portfolio__header {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    .portfolio__wrapper {
+        padding: 0 20px;
+    }
+    .slider-wrapper {
+        margin: 0 20px;
+    }
+    .swiper {
+        height: 300px;
+    }
+    .button-prev,
+    .button-next {
+        width: 40px;
+        height: 40px;
+    }
+    .portfolio__button-wrapper {
+        margin-top: 20px;
+    }
+    .portfolio__contact {
+        margin-top: 40px;
+    }
+    .portfolio {
+        padding: 60px 0 120px;
+    }
+}

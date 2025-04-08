@@ -1,0 +1,93 @@
+.price {
+    margin: 80px auto;
+    max-width: 1360px;
+    display: flex;
+    padding-inline: 20px;
+}
+.price__header {
+    width: 40%;
+    margin-right: 40px;
+    display: flex;
+}
+.price__title {
+    font-size: 45px;
+    text-align: center;
+    font-family: "Anonymous Pro", serif;
+    text-transform: uppercase;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.price__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.price__list-item-wrapper {
+    width: 33.332%;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+.price__list-item {
+    position: relative;
+    display: block;
+    margin: 20px;
+    min-width: 150px;
+    max-width: 100%;
+}
+.price__item-number {
+    position: absolute;
+    font-size: 300px;
+    color: rgba(0, 0, 0, 0.05);
+    font-family: "Anonymous Pro", serif;
+    font-weight: 700;
+    display: flex;
+    vertical-align: top;
+    margin-left: -54px;
+    margin-top: -100px;
+}
+.price__item-name {
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .price {
+        flex-direction: column;
+    }
+    .price__header {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .price__title {
+        font-size: 40px;
+    }
+    .price__item-number {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .price__list-item-wrapper {
+        width: 100%;
+        height: auto;
+    }
+    .price__item-number {
+        right: 0;
+        font-size: 150px;
+        margin-top: -41px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .price__item-name {
+        text-align: center;
+    }
+    .price__item-description {
+        text-align: center;
+    }
+    .price__title {
+        font-size: 30px;
+    }
+    .price {
+        margin: 40px;
+    }
+}

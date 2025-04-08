@@ -1,0 +1,204 @@
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 80px 0;
+}
+.footer__container {
+    margin: 0 auto;
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 40px;
+    color: white;
+    padding-inline: 40px;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer__nav {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav-item {
+    color: white;
+}
+.accent {
+    color: var(--main-color);
+}
+.footer__about {
+    padding: 80px 30px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer__about-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer__about-title,
+.footer__consultation-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: "Anonymous Pro", serif;
+    font-weight: 700;
+}
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+    .footer__about-title,
+    .footer__consultation-title {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 767px) {
+    .footer__about-title,
+    .footer__consultation-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer__about-title,
+    .footer__consultation-title {
+        font-size: 25px;
+    }
+}
+.footer__consultation-description {
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer__consultation-button {
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.footer__extra {
+    margin-top: 50px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.footer__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    color: white;
+}
+.footer__legal-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+}
+.footer__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.footer__details-schedule {
+    margin-bottom: 20px;
+}
+.footer__details-schedule-title,
+.footer__details-phone-title {
+    margin-bottom: 10px;
+    font-family: "Anonymous Pro", serif;
+    font-weight: 700;
+}
+.footer__nav-item {
+    margin: 5px 0;
+}
+.footer__legal-to-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer__legal-to-top a svg {
+    width: 30px;
+    height: 30px;
+}
+.footer__details-phone-number {
+    margin-bottom: 10px;
+}
+.footer__legal-copyright,
+.footer__legal-identifier {
+    text-align: right;
+}
+.footer__legal-identifier {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer__legal-copyright {
+    margin-top: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .footer__nav {
+        display: none;
+    }
+    .footer__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    .footer__about {
+        padding: 0;
+        border: none;
+    }
+    .footer__info {
+        border: none;
+    }
+    .footer__about-description,
+    .footer__consultation-description,
+    .footer__about-title,
+    .footer__consultation-title {
+        text-align: center;
+    }
+    .footer__consultation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer__details-phone-number,
+    .footer__details-schedule-value {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer__extra {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    .footer__legal,
+    .footer__details {
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__legal-copyright,
+    .footer__legal-identifier,
+    .footer__details-phone-title,
+    .footer__details-schedule-title {
+        text-align: center;
+    }
+    .footer__consultation-button {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .footer__container {
+        padding-inline: 20px;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+}

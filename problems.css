@@ -1,0 +1,120 @@
+.problems {
+    margin: 80px auto;
+    max-width: 1360px;
+    padding-inline: 20px;
+}
+.problems__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.problems__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.problems__item-wrapper {
+    width: 50%;
+}
+.problems__item {
+    height: auto;
+    display: flex;
+    position: relative;
+    margin: 20px;
+}
+.problems__item-info {
+    padding: 30px 0 30px 30px;
+    background-color: white;
+}
+.problems__item-image {
+    width: 100%;
+}
+.problems__item-image-wrapper {
+    width: 100%;
+    height: 220px;
+}
+.problems__item-content {
+    width: 100%;
+    margin-left: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.problems__item-image-wrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.problems__item-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.problems__item-title {
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+}
+.problems__item-button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: var(--main-color);
+    margin-left: 30px;
+    flex-shrink: 0;
+}
+.problems__item-price {
+    text-align: right;
+    width: 100%;
+    font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .problems__item {
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .problems__item-wrapper {
+        width: 100%;
+    }
+    .problems__header {
+        flex-direction: column;
+    }
+    .problems__header-subtext {
+        padding-inline: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .problems__item {
+        flex-direction: column;
+    }
+    .problems__item-content {
+        margin-left: 0;
+    }
+    .problems__item-price {
+        width: fit-content;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .problems__item-title {
+        font-size: 20px;
+    }
+    .problems__item-info {
+        padding-left: 0;
+    }
+    .problems__item-button {
+        margin-left: 0;
+    }
+    .problems__item-actions {
+        justify-content: center;
+    }
+    .problems__item-title,
+    .problems__item-description {
+        text-align: center;
+    }
+    .problems {
+        margin: 40px 0;
+    }
+}
